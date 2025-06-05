@@ -1,9 +1,10 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'SwarnaVerse',
+  title: 'Swarna Panhida',
   description: 'A futuristic platform for media competitions.',
 };
 

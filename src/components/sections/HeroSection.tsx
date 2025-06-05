@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -7,19 +8,19 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://placehold.co/1920x1080.png"
-          alt="Abstract media background"
-          data-ai-hint="film tech microphone"
+          src="https://placehold.co/1200x600.png"
+          alt="Swarna Panhida platform background"
+          data-ai-hint="swarna panhida logo script"
           layout="fill"
           objectFit="cover"
-          className="blur-md brightness-50"
+          className="blur-sm brightness-75"
           priority
         />
-        <div className="absolute inset-0 bg-background/70"></div>
+        <div className="absolute inset-0 bg-background/60"></div>
       </div>
       <div className="relative z-10 p-4 container mx-auto">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline mb-6 text-glow-primary animate-neon-pulse">
-          Welcome to SwarnaVerse
+          Welcome to Swarna Panhida
         </h1>
         <p className="text-xl md:text-2xl text-foreground/90 mb-10 max-w-3xl mx-auto">
           Unleash your creativity and compete in the ultimate showcase of talent in film, technology, and media.
