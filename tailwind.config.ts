@@ -11,7 +11,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Montserrat', 'sans-serif'],
-        headline: ['Orbitron', 'sans-serif'],
+        headline: ['Montserrat', 'sans-serif'], // Changed from Orbitron
         code: ['monospace'],
       },
       colors: {
@@ -88,20 +88,11 @@ export default {
             height: '0',
           },
         },
-        glow: {
-          '0%, 100%': { opacity: '1', boxShadow: "0 0 5px theme('colors.primary.DEFAULT'), 0 0 10px theme('colors.primary.DEFAULT / 0.8'), 0 0 15px theme('colors.primary.DEFAULT / 0.6')" },
-          '50%': { opacity: '0.8' , boxShadow: "0 0 10px theme('colors.primary.DEFAULT'), 0 0 15px theme('colors.primary.DEFAULT / 0.8'), 0 0 20px theme('colors.primary.DEFAULT / 0.6')"},
-        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'neon-pulse': 'glow 2s ease-in-out infinite',
       },
-      dropShadow: {
-        'primary-glow': '0 0 10px hsl(var(--primary))',
-        'accent-glow': '0 0 10px hsl(var(--accent))',
-      }
     },
   },
   plugins: [require('tailwindcss-animate')],

@@ -54,9 +54,9 @@ export function AiCategoryGeneratorForm() {
   };
 
   return (
-    <Card className="w-full max-w-2xl mx-auto bg-card border-primary/50 shadow-[0_0_15px_theme(colors.primary/0.3)]">
+    <Card className="w-full max-w-2xl mx-auto bg-card border-border/70 shadow-lg">
       <CardHeader>
-        <CardTitle className="text-2xl font-headline text-primary text-glow-primary">AI Category Description Generator</CardTitle>
+        <CardTitle className="text-2xl font-headline text-primary">AI Category Description Generator</CardTitle>
         <CardDescription className="text-card-foreground/80">
           Enter a category name and some source details (e.g., key features, target audience, unique aspects) to generate a compelling description using AI.
         </CardDescription>
@@ -69,7 +69,7 @@ export function AiCategoryGeneratorForm() {
               id="categoryName"
               {...register("categoryName")}
               placeholder="e.g., Sci-Fi Short Film Contest"
-              className="bg-background/50 border-primary/50 focus:border-primary focus:ring-primary"
+              className="bg-input border-border focus:border-primary focus:ring-primary"
             />
             {errors.categoryName && <p className="text-sm text-destructive">{errors.categoryName.message}</p>}
           </div>
@@ -80,18 +80,18 @@ export function AiCategoryGeneratorForm() {
               {...register("sourceContent")}
               placeholder="e.g., Focus on futuristic themes, visual effects, storytelling. Max 5 minutes. Open to amateurs and professionals."
               rows={5}
-              className="bg-background/50 border-primary/50 focus:border-primary focus:ring-primary"
+              className="bg-input border-border focus:border-primary focus:ring-primary"
             />
             {errors.sourceContent && <p className="text-sm text-destructive">{errors.sourceContent.message}</p>}
           </div>
         </CardContent>
         <CardFooter className="flex flex-col items-stretch gap-4">
-          <Button type="submit" disabled={isLoading} className="w-full bg-accent text-accent-foreground hover:bg-accent/80 hover:shadow-[0_0_15px_theme(colors.accent)] transition-all duration-300">
+          <Button type="submit" disabled={isLoading} className="w-full bg-accent text-accent-foreground hover:bg-accent/80 transition-all duration-300">
             {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : null}
             {isLoading ? 'Generating...' : 'Generate Description'}
           </Button>
           {generatedDescription && (
-            <div className="mt-6 p-4 border border-primary/50 rounded-md bg-background/30">
+            <div className="mt-6 p-4 border border-border/50 rounded-md bg-background/50">
               <h4 className="font-headline text-lg text-primary mb-2">Generated Description:</h4>
               <p className="text-card-foreground/90 whitespace-pre-wrap">{generatedDescription}</p>
             </div>

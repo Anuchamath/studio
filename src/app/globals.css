@@ -4,86 +4,87 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 @layer base {
   :root {
-    --background: 220 15% 8%; /* Very Dark Desaturated Blue */
-    --foreground: 45 15% 95%; /* Very Light Warm Off-White */
+    --background: 220 10% 10%; /* Deep, clean dark gray */
+    --foreground: 220 10% 85%; /* Crisp light gray for text */
 
-    --card: 220 15% 12%; /* Slightly lighter than background */
-    --card-foreground: 45 15% 90%; /* Lighter off-white for cards */
+    --card: 220 10% 14%; /* Slightly lighter than background for cards */
+    --card-foreground: 220 10% 80%; /* Lighter gray for card text */
 
-    --popover: 220 15% 10%; /* Similar to card */
-    --popover-foreground: 45 15% 90%;
+    --popover: 220 10% 12%; /* Similar to card */
+    --popover-foreground: 220 10% 80%;
 
-    --primary: 45 100% 50%; /* Vibrant Gold */
-    --primary-foreground: 45 100% 10%; /* Very Dark Brown/Gold for text on primary */
+    --primary: 45 80% 55%; /* Refined, slightly desaturated gold */
+    --primary-foreground: 45 80% 10%; /* Very dark gold/brown for text on primary */
 
-    --secondary: 40 60% 40%; /* Muted, darker gold/bronze */
-    --secondary-foreground: 40 15% 85%;
+    --secondary: 40 70% 45%; /* Muted, darker amber */
+    --secondary-foreground: 40 15% 80%;
 
-    --muted: 220 15% 20%; /* Muted version of background */
-    --muted-foreground: 220 10% 70%; /* Lighter muted text */
+    --muted: 220 10% 25%; /* Muted version of background/darker gray */
+    --muted-foreground: 220 10% 65%; /* Lighter muted text */
 
-    --accent: 35 100% 55%; /* Amber/Orange-Gold */
-    --accent-foreground: 35 100% 10%; /* Very dark amber/brown for text on accent */
+    --accent: 35 80% 60%; /* Refined amber/orange-gold */
+    --accent-foreground: 35 80% 10%; /* Very dark amber/brown for text on accent */
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 70% 50%; /* Adjusted destructive color for balance */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 45 80% 35%; /* Darker gold for borders */
-    --input: 220 15% 15%; /* Input background */
-    --ring: 45 100% 50%; /* Primary gold for focus rings */
+    --border: 220 10% 25%; /* Subtle gray border */
+    --input: 220 10% 20%; /* Input background */
+    --ring: 45 80% 55%; /* Primary gold for focus rings */
 
-    --chart-1: 45 100% 50%;
-    --chart-2: 35 100% 55%;
-    --chart-3: 40 80% 60%;
-    --chart-4: 30 70% 45%;
-    --chart-5: 50 60% 70%;
+    --chart-1: 45 80% 55%;
+    --chart-2: 35 80% 60%;
+    --chart-3: 40 70% 50%;
+    --chart-4: 30 60% 50%;
+    --chart-5: 50 50% 65%;
     
     --radius: 0.5rem;
 
-    --sidebar-background: 220 20% 6%; /* Even darker, richer blue-black */
-    --sidebar-foreground: 45 20% 90%;
-    --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 45 100% 10%;
-    --sidebar-accent: 35 100% 55%;
-    --sidebar-accent-foreground: 35 100% 10%;
-    --sidebar-border: 45 70% 30%;
-    --sidebar-ring: 45 100% 50%;
+    --sidebar-background: 220 15% 8%; /* Slightly darker for sidebar contrast if needed */
+    --sidebar-foreground: 220 10% 88%;
+    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary-foreground: 45 80% 10%;
+    --sidebar-accent: 35 80% 60%;
+    --sidebar-accent-foreground: 35 80% 10%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 45 80% 55%;
   }
 
   .dark {
-    --background: 220 15% 8%;
-    --foreground: 45 15% 95%;
-    --card: 220 15% 12%;
-    --card-foreground: 45 15% 90%;
-    --popover: 220 15% 10%;
-    --popover-foreground: 45 15% 90%;
-    --primary: 45 100% 50%;
-    --primary-foreground: 45 100% 10%;
-    --secondary: 40 60% 40%;
-    --secondary-foreground: 40 15% 85%;
-    --muted: 220 15% 20%;
-    --muted-foreground: 220 10% 70%;
-    --accent: 35 100% 55%;
-    --accent-foreground: 35 100% 10%;
-    --destructive: 0 62.8% 30.6%;
+    /* Re-apply to ensure dark theme variables are picked up correctly */
+    --background: 220 10% 10%;
+    --foreground: 220 10% 85%;
+    --card: 220 10% 14%;
+    --card-foreground: 220 10% 80%;
+    --popover: 220 10% 12%;
+    --popover-foreground: 220 10% 80%;
+    --primary: 45 80% 55%;
+    --primary-foreground: 45 80% 10%;
+    --secondary: 40 70% 45%;
+    --secondary-foreground: 40 15% 80%;
+    --muted: 220 10% 25%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 35 80% 60%;
+    --accent-foreground: 35 80% 10%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
-    --border: 45 80% 35%;
-    --input: 220 15% 15%;
-    --ring: 45 100% 50%;
+    --border: 220 10% 25%;
+    --input: 220 10% 20%;
+    --ring: 45 80% 55%;
 
-    --sidebar-background: 220 20% 6%;
-    --sidebar-foreground: 45 20% 90%;
-    --sidebar-primary: 45 100% 50%;
-    --sidebar-primary-foreground: 45 100% 10%;
-    --sidebar-accent: 35 100% 55%;
-    --sidebar-accent-foreground: 35 100% 10%;
-    --sidebar-border: 45 70% 30%;
-    --sidebar-ring: 45 100% 50%;
+    --sidebar-background: 220 15% 8%;
+    --sidebar-foreground: 220 10% 88%;
+    --sidebar-primary: 45 80% 55%;
+    --sidebar-primary-foreground: 45 80% 10%;
+    --sidebar-accent: 35 80% 60%;
+    --sidebar-accent-foreground: 35 80% 10%;
+    --sidebar-border: 220 10% 20%;
+    --sidebar-ring: 45 80% 55%;
   }
 }
 
@@ -99,27 +100,11 @@ body {
     @apply dark; /* Force dark theme */
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline text-primary;
+    @apply font-headline text-primary; /* Headline font applied via tailwind.config.ts */
   }
   p, span, div, li, a, label, input, textarea, button, select {
     @apply font-body;
   }
-}
-
-/* Custom glow effects */
-.neon-glow-primary {
-  box-shadow: 0 0 5px theme('colors.primary.DEFAULT'), 0 0 10px theme('colors.primary.DEFAULT / 0.8'), 0 0 15px theme('colors.primary.DEFAULT / 0.6');
-}
-.neon-glow-accent {
-  box-shadow: 0 0 5px theme('colors.accent.DEFAULT'), 0 0 10px theme('colors.accent.DEFAULT / 0.8'), 0 0 15px theme('colors.accent.DEFAULT / 0.6');
-}
-
-.text-glow-primary {
-  text-shadow: 0 0 5px theme('colors.primary.DEFAULT / 0.7'), 0 0 10px theme('colors.primary.DEFAULT / 0.5');
-}
-
-.text-glow-accent {
-  text-shadow: 0 0 5px theme('colors.accent.DEFAULT / 0.7'), 0 0 10px theme('colors.accent.DEFAULT / 0.5');
 }
 
 /* Smooth scroll for anchor links */

@@ -10,15 +10,15 @@ export function RulesInfoSection() {
   return (
     <section id="rules" className="py-16 md:py-24 bg-card">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-4xl md:text-5xl font-headline text-center mb-12 text-primary text-glow-primary">
+        <h2 className="text-3xl md:text-4xl font-headline text-center mb-12 text-primary">
           Rules & Information
         </h2>
         <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
-          <AccordionItem value="item-1" className="border-primary/30">
-            <AccordionTrigger className="text-xl hover:text-primary data-[state=open]:text-primary font-medium">
+          <AccordionItem value="item-1" className="border-border/50">
+            <AccordionTrigger className="text-lg hover:text-primary data-[state=open]:text-primary font-medium">
               General Rules & Information
             </AccordionTrigger>
-            <AccordionContent className="text-card-foreground/80">
+            <AccordionContent className="text-card-foreground/80 text-sm">
               <p className="mb-3"><strong>Event:</strong> “Swarna Panhida”, the All Island Interschool Trilingual Media Competition.</p>
               <p className="mb-3"><strong>Date & Time:</strong> Sunday, 15th June 2025, from 7.00 a.m. to 5.00 p.m.</p>
               <p className="mb-3"><strong>Venue:</strong> St Sylvesters College.</p>
@@ -36,11 +36,11 @@ export function RulesInfoSection() {
               </ul>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2" className="border-primary/30">
-            <AccordionTrigger className="text-xl hover:text-primary data-[state=open]:text-primary font-medium">
+          <AccordionItem value="item-2" className="border-border/50">
+            <AccordionTrigger className="text-lg hover:text-primary data-[state=open]:text-primary font-medium">
               Eligibility Criteria
             </AccordionTrigger>
-            <AccordionContent className="text-card-foreground/80">
+            <AccordionContent className="text-card-foreground/80 text-sm">
               <p className="mb-2"><strong>Age Categories:</strong></p>
               <ul className="list-disc pl-5 space-y-1 mb-3">
                 <li>Junior Category: Grades 6, 7, and 8</li>
@@ -58,11 +58,11 @@ export function RulesInfoSection() {
               </ul>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3" className="border-primary/30 border-b-0">
-            <AccordionTrigger className="text-xl hover:text-primary data-[state=open]:text-primary font-medium">
+          <AccordionItem value="item-3" className="border-border/50 border-b-0">
+            <AccordionTrigger className="text-lg hover:text-primary data-[state=open]:text-primary font-medium">
               Prizes & Recognition
             </AccordionTrigger>
-            <AccordionContent className="text-card-foreground/80">
+            <AccordionContent className="text-card-foreground/80 text-sm">
               <ul className="list-disc pl-5 space-y-2">
                 <li>Grand prize winner in each category receives [Prize Details - To be updated by organizers].</li>
                 <li>Top 3 entries in each category will be featured on our platform and social media.</li>
