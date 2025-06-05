@@ -89,8 +89,8 @@ export default {
           },
         },
         glow: {
-          '0%, 100%': { opacity: '1', boxShadow: '0 0 5px theme(colors.primary), 0 0 10px theme(colors.primary / 0.8), 0 0 15px theme(colors.primary / 0.6)' },
-          '50%': { opacity: '0.8' , boxShadow: '0 0 10px theme(colors.primary), 0 0 15px theme(colors.primary / 0.8), 0 0 20px theme(colors.primary / 0.6)'},
+          '0%, 100%': { opacity: '1', boxShadow: "0 0 5px theme('colors.primary.DEFAULT'), 0 0 10px theme('colors.primary.DEFAULT / 0.8'), 0 0 15px theme('colors.primary.DEFAULT / 0.6')" },
+          '50%': { opacity: '0.8' , boxShadow: "0 0 10px theme('colors.primary.DEFAULT'), 0 0 15px theme('colors.primary.DEFAULT / 0.8'), 0 0 20px theme('colors.primary.DEFAULT / 0.6')"},
         }
       },
       animation: {
