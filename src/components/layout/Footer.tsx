@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Facebook, Instagram, Youtube, Mail, Phone } from 'lucide-react';
 
@@ -7,7 +8,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-headline text-primary mb-4">SwarnaVerse</h3>
+            <h3 className="text-xl font-headline text-primary mb-4">Swarna Panhida</h3>
             <p className="text-muted-foreground">Innovate. Create. Inspire.</p>
           </div>
           <div>
@@ -15,7 +16,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:info@swarnaverse.com" className="hover:text-primary transition-colors">info@swarnaverse.com</a>
+                <a href="mailto:info@swarnapanhida.com" className="hover:text-primary transition-colors">info@swarnapanhida.com</a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-5 h-5 text-primary" />
@@ -39,7 +40,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} SwarnaVerse. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Swarna Panhida. All rights reserved.</p>
         </div>
       </div>
     </footer>
